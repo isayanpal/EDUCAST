@@ -15,7 +15,7 @@ EdUCast is a blog application designed for students, offering a platform for cre
 
 ## Tech Stack
 
-- **Database:** MongoDB
+- **Database:** MongoDB , Firebase 
 - **Backend:** Express.js, Node.js
 - **Frontend:** React.js
 - **Post Editing:** ReactQuill library
