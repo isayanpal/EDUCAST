@@ -1,6 +1,6 @@
 # EdUCast - Student Blog and Community Platform
 
-EdUCast is a blog application designed for students, offering a platform for creating, reading, updating, and deleting posts. In addition to individual posts, EdUCast provides a community chat feature with private rooms, allowing multiple users to engage in discussions on various topics. 
+EdUCast is a blog application designed for students, offering a platform for creating, reading, updating, and deleting posts. In addition to individual posts, EdUCast provides a community chat feature with private rooms, allowing multiple users to engage in discussions on various topics.
 
 ## Features
 
@@ -15,7 +15,7 @@ EdUCast is a blog application designed for students, offering a platform for cre
 
 ## Tech Stack
 
-- **Database:** MongoDB , Firebase 
+- **Database:** MongoDB , Firebase
 - **Backend:** Express.js, Node.js
 - **Frontend:** React.js
 - **Post Editing:** ReactQuill library
@@ -39,25 +39,15 @@ cd ../server
 npm install
 ```
 
-3. Set up the MongoDB database and update the connection details in the server configuration.
+3. Set up the MongoDB database and update the connection details in the server configuration. Create your own .env file by taking example from the .env.example .
 
 4. Run the application:
 
 ```bash
 cd client
-npm start
+npm run dev
 cd ../server
-npm start
+nodemon index.js
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser to access EdUCast.
-
-## Contributing
-
-We welcome contributions from the community. If you'd like to contribute to EdUCast, please follow our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Feel free to reach out to us with any feedback or suggestions. Happy blogging and chatting on EdUCast!
+Visit [http://localhost:5173](http://localhost:5173) in your browser to access EdUCast.
