@@ -5,8 +5,16 @@ a {
   cursor: pointer;
 }
 body {
-  color: #333;
+  color: black;
   font-family: "Poppins", sans-serif;
+  background: rgb(66, 198, 255);
+  background: linear-gradient(
+    131deg,
+    rgba(66, 198, 255, 1) 0%,
+    rgba(148, 44, 185, 1) 55%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 img {
   max-width: 100%;
@@ -24,7 +32,8 @@ header {
 }
 header a {
   text-decoration: none;
-  color: inherit;
+  color: whitesmoke;
+  font-weight: 500;
 }
 header a.logo {
   font-weight: bold;
@@ -58,7 +67,7 @@ div.post div.texts a {
 }
 .post .info {
   margin: 6px 0;
-  color: #888;
+  color: whitesmoke;
   font-size: 0.7rem;
   font-weight: bold;
   display: flex;
@@ -74,7 +83,7 @@ div.post div.texts a {
 .login,
 .register {
   max-width: 400px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 input {
   display: block;
@@ -87,13 +96,13 @@ input {
 }
 button {
   cursor: pointer;
-  width: 100%;
+  width: fit-content;
   display: block;
   background-color: #555;
   border: 0;
   color: #fff;
   border-radius: 5px;
-  padding: 7px 0;
+  padding: 7px;
 }
 form.login h1,
 form.register h1 {
@@ -132,6 +141,8 @@ div.post-page .author {
 div.edit-row {
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  gap: 25px;
 }
 .delete-btn {
   background-color: #333;
@@ -153,4 +164,68 @@ a.edit-btn {
 }
 a svg {
   height: 15px;
+}
+
+.website-logo {
+  width: 40px;
+}
+
+.login-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+.login-img {
+  width: 60%;
+}
+
+.login-section {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 400px;
+  margin-inline: auto;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+}
+
+.login-btn {
+  background-color: #1d85ff;
+}
+.login-header {
+  color: black;
+  font-size: 35px;
+}
+
+.register-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+.register-img {
+  width: 60%;
+}
+
+.register-section {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 400px;
+  margin-inline: auto;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+}
+
+.register-btn {
+  background-color: #1d85ff;
+}
+.register-header {
+  color: black;
+  font-size: 35px;
 }

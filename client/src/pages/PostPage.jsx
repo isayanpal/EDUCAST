@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { UserContext } from "../UserContext";
+import toast from "react-hot-toast";
 
 const PostPage = () => {
   const [postInfo, setPostInfo] = useState(null);
@@ -28,8 +29,10 @@ const PostPage = () => {
       });
       if (response.ok) {
         navigate("/");
+        toast.success("Post deleted successfully");
       } else {
         console.log("Failed to delete post:", response.statusText);
+        toast.error("Failed to delete post");
       }
     } catch (error) {
       console.error("Failed to delete post:", error);
