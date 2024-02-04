@@ -39,6 +39,7 @@ const Header = () => {
             <>
             <span>Hello, {username}</span>
             <Link to='/create'>Create new post</Link>
+            <Link to='https://chat-app-one-ruddy.vercel.app/'>Chat</Link>
             <a onClick={logout}>Logout</a>
             </>
           )}

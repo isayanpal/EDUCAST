@@ -125,14 +125,13 @@ app.delete("/post/:id/delete", async (req, res) => {
     const userId = decodedToken.id;
 
     const post = await Post.findById(id);
-
     if (post.author.toString() !== userId) {
       return res
         .status(401)
         .json({ message: "You are not authorised to delete" });
     }
 
-    await Post.findByIdAndDelete(id);
+    await Post.deleteOne({ _id: id });
 
     if (post.cover) {
       fs.unlinkSync(post.cover);
