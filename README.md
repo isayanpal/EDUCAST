@@ -1,3 +1,6 @@
+![image](https://github.com/isayanpal/EDUCAST/assets/102523492/90abbfa8-e15f-47f4-ab71-a81aa31b8dcc)
+
+
 # EdUCast - Student Blog and Community Platform
 
 EdUCast is a blog application designed for students, offering a platform for creating, reading, updating, and deleting posts. In addition to individual posts, EdUCast provides a community chat feature with private rooms, allowing multiple users to engage in discussions on various topics.
